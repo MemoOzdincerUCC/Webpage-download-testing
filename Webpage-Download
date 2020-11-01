@@ -1,0 +1,8 @@
+def url(WebURL)
+    WebURL=input("Enter Your URL Here")
+url(WebURL)
+response = urllib.request.urlopen(url)
+webContent = response.read()
+
+print(webContent[0:300])
+
